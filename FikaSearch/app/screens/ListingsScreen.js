@@ -11,7 +11,7 @@ import AppText from '../components/Text';
 import useApi from '../hooks/useApi';
 import genreNames from '../helpers/movies';
 
-function ListingsScreen() {
+const ListingsScreen = () => {
   const getMoviesApi = useApi(listingsApi.getMovies);
   const getGenresApi = useApi(listingsApi.getGenres);
 
@@ -46,7 +46,7 @@ function ListingsScreen() {
       />
     </Screen>
   );
-}
+};
 
 const styles = StyleSheet.create({
   screen: {
